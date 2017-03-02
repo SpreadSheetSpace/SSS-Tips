@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="../../Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="content-header">
+        <div class="padding">
+            <h1>SpreadSheetSpace Tips</h1>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+            <p><h3>Login</h3></p>
+            <p>Mail:</p>
+            <input id="username" class="login-fields" value="" type="text" />
+            <p>Password:</p>
+            <input id="password" value="" class="login-fields" type="password" />
+            <button id="login" class="login-fields">Login</button>
+            <button id="logout" class="logout-fields">Logout</button>
+
+            <p><a id="a_site" target="_blank" href="https://www.spreadsheetspace.net/orchestrator/tips">Sign up here...</a></p>
+
+            <p><strong>Tips Calculator.</strong></p>
+            <p>Select People Range:</p>
+            <input id="input-people" value="" type="text" readonly />
+            <button id="get-people-from-selection">Get people</button>
+            <p>Select Transaction Range:</p>
+            <input id="input-transaction" value="" type="text" readonly />
+            <button id="get-transaction-from-selection">Get transaction</button>
+            <p>Select One Cell to Show Result Calculation:</p>
+            <input id="input-calculate" value="" type="text" readonly/>
+            <button id="get-cell-calculate">Select cell</button>
+            <p><button id="calculate-tips">Calculate</button>
+            <button id="reset-tips">Reset</button></p>
+        </div>
+    </div>
+</body>
+</html>
